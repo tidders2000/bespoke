@@ -17,3 +17,105 @@
       font-size:2.5em;
       padding:5px;
   }
+
+  /*.........nav menu*.........*/
+
+  .top-logo{
+      float:right;
+      padding:5px;
+      width:250px;
+
+  }
+
+  .offcanvas{
+background-color: #005E76!important;
+font-family: Avenir, Helvetica, sans-serif!important;
+width:600px!important;
+  }
+
+  .nav-options{
+    list-style-type: none;
+  
+  }
+
+  .nav-options li{
+      text-transform: uppercase;
+  
+      font-size:2.4em;
+  }
+
+  .nav-options li a{
+    color:white;
+  }
+
+  .blue{
+      color:#54A6BB!important;
+  }
+
+  .btn-close{
+      color:white'
+  }
+
+  .intro{
+    
+     background-color: black;
+     /* -webkit-animation: fadeout 3s ease-in alternate forwards ;
+     -moz-animation: fadeout 3s ease-in alternate forwards ;
+     animation: fadeout 3s ease-in alternate forwards; 
+     position: relative; */
+    
+     top: -100px;
+     left: 0;
+     height: 110vh;
+ }
+
+ .main{
+ 
+    -webkit-animation: fadein 6s ease-in alternate forwards ;
+    -moz-animation: fadeoin 6s ease-in alternate forwards ;
+    animation: fadein 6s ease-in alternate forwards; 
+
+ }
+
+  
+ .intial-logo{
+    display: block;
+   margin: auto;
+ 
+   width: 100%;
+
+
+    
+ }
+
+/* fadeout animation*/
+  @-webkit-keyframes fadeout {
+    from { opacity: 1; }
+    to{ opacity: 0; }
+}
+
+@-moz-keyframes fadeout {
+    from { opacity: 1; }
+    to{ opacity: 0; }
+}
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to{ opacity: 0; }
+}
+
+/* fadein animation*/
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to{ opacity: 1; }
+}
+
+@-moz-keyframes fadein{
+    from { opacity: 0; }
+    to{ opacity: 1; }
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to{ opacity: 1; }
+}
