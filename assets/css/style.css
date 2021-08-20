@@ -7,7 +7,11 @@
   body{
       background-color: black;
       color:white;
+      cursor: url(../images/bspoke-cursor.png), auto;
+      cursor: url(../images/bspoke-cursor.png) 15 15, move;
   }
+
+
   h1{
       font-family: Avenir, Helvetica, sans-serif;
   }
@@ -16,6 +20,8 @@
       color:white;
       font-size:2.5em;
       padding:5px;
+      cursor: url(../images/bspoke-cursor.png), auto;
+      cursor: url(../images/bspoke-cursor.png) 15 15, move;
   }
 
   /*.........nav menu*.........*/
