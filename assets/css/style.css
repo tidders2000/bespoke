@@ -9,11 +9,18 @@
       color:white;
       cursor: url(../images/bspoke-cursor.png), auto;
       cursor: url(../images/bspoke-cursor.png) 15 15, move;
+      font-family: Avenir, Helvetica, sans-serif;
   }
 
-
+.row{
+    margin:0!important;
+}
   h1{
       font-family: Avenir, Helvetica, sans-serif;
+  }
+
+  .blue-text{
+      color:#005E76
   }
   /* hamburger nav button*/
   .hamburger{
@@ -94,6 +101,98 @@ width:600px!important;
     
  }
 
+ /*......footer.........*/
+ .footer{
+    color: cornsilk;
+position: absolute;
+bottom:30px;
+}
+
+.test{
+  height:400px;
+  background-color: black;
+  height:100vh;
+  top:0;
+  margin-top: -80px;
+  
+  display: none;
+  }
+.contact h5{
+    font-size: 24px;
+}
+  .contact {
+    text-align: right;
+    margin-right: 10px;
+}
+
+.contact-text{
+    font-size: 13px;
+    font-family: Avenir, Helvetica, sans-serif!important;
+}
+
+.contact-text span{
+    color:#005E76;
+    font-weight: bold;
+}
+
+.copyright{
+    font-size: 10px;
+}
+
+.social{
+   text-align: right;
+}
+
+.circle{
+    height:35px;
+    width:35px;
+    border-radius: 50%;
+    border:2px solid white;
+    text-align: center;
+    padding-top:5px;
+    float:right;
+    margin-left: 5px;
+
+}
+
+.privacy{
+    text-align: right;
+    font-size: 13px;
+   
+}
+.legals{
+    font-size: 10px;
+}
+
+
+
+@media (max-width: 575.98px) { 
+
+    .legals{
+        text-align: center;
+    }
+
+    .circle{
+        float:none;
+       display:inline-block;
+
+        margin-left: 0;
+        margin-right: 5px;;
+     }
+
+     .copyright{
+         display:none;
+     }
+
+     .social{
+         text-align: center;
+        padding-bottom: 10px;
+      
+        
+        
+    }
+}
+
 /* fadeout animation*/
   @-webkit-keyframes fadeout {
     from { opacity: 1; }
@@ -125,3 +224,5 @@ width:600px!important;
     from { opacity: 0; }
     to{ opacity: 1; }
 }
+
+
