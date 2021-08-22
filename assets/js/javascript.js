@@ -7,5 +7,6 @@ function fadeMyDiv() {
  }
 $(document).ready(function() {
  fadeMyDiv();
+
  }
 )
