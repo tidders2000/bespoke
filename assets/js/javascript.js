@@ -6,31 +6,32 @@ function fadeMyDiv() {
  
  }
 
- function isElementInViewport(elem) {
-    var $elem = $(elem);
-
-    // Get the scroll position of the page.
-    var scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1) ? 'body' : 'html');
-    var viewportTop = $(scrollElem).scrollTop();
-    var viewportBottom = viewportTop + $(window).height();
-
-    // Get the position of the element on the page.
-    var elemTop = Math.round( $elem.offset().top );
-    var elemBottom = elemTop + $elem.height();
-
-    return ((elemTop < viewportBottom) && (elemBottom > viewportTop));
-}
-
- function checkAnimation() {
-    var $elem = $('.pic-inner .pic-inner2');
-
-    if (isElementInViewport($elem)) {
-        // Start the animation
-        $elem.addClass('scale-in-top');
-    } else {
-        $elem.removeClass('scale-in-top');
-    }
-}
+ var $animation_elements = $('.animation-element');
+ var $window = $(window);
+ 
+ function check_if_in_view() {
+   var window_height = $window.height();
+   var window_top_position = $window.scrollTop();
+   var window_bottom_position = (window_top_position + window_height);
+  
+   $.each($animation_elements, function() {
+     var $element = $(this);
+     var element_height = $element.outerHeight();
+     var element_top_position = $element.offset().top;
+     var element_bottom_position = (element_top_position + element_height);
+  
+     //check to see if this current container is within viewport
+     if ((element_bottom_position >= window_top_position) &&
+         (element_top_position <= window_bottom_position)) {
+       $element.addClass('scale-in-top');
+     } else {
+       $element.removeClass('scale-in-top');
+     }
+   });
+ }
+ 
+ $window.on('scroll resize', check_if_in_view);
+ $window.trigger('scroll');
 
 $(document).ready(function() {
  fadeMyDiv();
