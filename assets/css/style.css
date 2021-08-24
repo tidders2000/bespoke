@@ -163,6 +163,21 @@ width:600px!important;
 .copyright{
     font-size: 10px;
 }
+.contact-text a{
+    color:white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form-submit{
+    background-color:#54A6BB; 
+    color:white;
+}
+
+.offcanvas-top{
+    height:600px;
+    cursor: pointer;
+}
 
 .social{
    text-align: right;
@@ -202,6 +217,10 @@ width:600px!important;
     .intro{
         padding-top: 250px;
     }
+ }
+
+ .content-link-mobile{
+     display: none;
  }
 
 /* media adjustments for basic shell*/
@@ -249,6 +268,17 @@ width:600px!important;
       .nav-options li{
           font-size: 1.5em;
 
+      }
+      .content-link-mobile{
+          text-align: center;
+          display: block;
+      }
+      .content-link-mobile a{
+          color:white;
+          text-decoration: none;
+      }
+      .offcanvas-top{
+          height:650px;
       }
 
 }
@@ -429,11 +459,12 @@ h1{font-size: 4em;}
 
     .blue-content-box{
         width: 300px;
- 
+        padding-right: 5px!important;
     margin-right: 0;
     }
     .blue-content-box p{
         font-size: 1em;
+       
  }
 }
 /*................animations..............*/
