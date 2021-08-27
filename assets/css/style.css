@@ -46,10 +46,8 @@
    
   }
 
-  .hamburger{
- 
-       
-  }
+
+
 
   .hamburger1{
       padding-top:10px!important;
@@ -88,7 +86,7 @@
       padding:5px;
       width:250px;
       position:fixed;
-      right:10px;
+      right:20px;
 
   }
 
@@ -126,15 +124,19 @@ width:600px!important;
   .intro{
     
      background-color: black;
-     /* -webkit-animation: fadeout 3s ease-in alternate forwards ;
-     -moz-animation: fadeout 3s ease-in alternate forwards ;
-     animation: fadeout 3s ease-in alternate forwards; 
-     position: relative; */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
     
-     top: -100px;
+     
      left: 0;
      height: 110vh;
+ 
+  
+   
  }
+
 /* transition of main content to give intial logo load time*/
  .main{
  
@@ -154,6 +156,11 @@ width:600px!important;
 
 
     
+ }
+
+ .slider-image{
+   height:75vh;
+   padding-bottom:25vh;
  }
 
 
@@ -386,6 +393,8 @@ width:600px!important;
 
   font-size: 1.8em;
     padding:50px;
+    /* margin-left: 10px!important; */
+   
 }
 
 .pic-inner3{
@@ -401,6 +410,7 @@ width:600px!important;
 .about-text{
     font-size: 1.8em;
     padding:50px;
+
 
 
 }
