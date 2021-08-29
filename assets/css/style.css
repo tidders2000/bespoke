@@ -70,6 +70,13 @@
       color:#54A6BB;
   }
 
+  .about-title{
+    color:white;
+    text-transform: uppercase;
+    font-family: Avenir, Helvetica, sans-serif!important;
+    font-size:1.3em
+  }
+
   /*.........nav menu*.........*/
 /* positions hamburger at top left of page*/
   .nav {
@@ -158,11 +165,25 @@ width:600px!important;
     
  }
 
+ /**.............slider................*/
  .slider-image{
    height:75vh;
    padding-bottom:25vh;
  }
 
+ .top-left {
+  position: absolute;
+  top: 200px;
+  right: 35px;
+  text-align: right;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  
+
+  font-size: 2.3em;
+  font-family: Avenir, Helvetica, sans-serif!important;
+
+}
 
 
 .footer {
@@ -344,36 +365,37 @@ width:600px!important;
 
 }
 .pic-outer{
-    padding: 50px;
+    padding-left: 30px;
 }
 
 .pic-inner{
     background-color: #005E76;
-    height: 500px;
-    width:600px;
-    padding-top:100px;
-    padding-left:50px;
+    height: 420px;
+    width:650px;
+    padding-top:60px;
+    padding-left:60px;
 }
 .inner-img{
     border:solid 5px #54A6BB;
     height:300px;
-    width:600px;
+    width:650px;
 }
 /* secon d inner shape pushed ot right*/
 .pic-inner2{
     background-color: rgb(52, 133, 154);
-    height: 600px;
-    width:400px;
+    height: 650px;
+    width:420px;
     position: relative;
     float:right;
+    margin-right: 30px;
  
 }
 /*pushs second pic to right*/
 .pic-outer2{
-    margin-left:100px;
+    /* margin-left:100px; */
     margin-top: 0;
     padding-top: 0;
-    max-height:600px;/* added to stop div growing and pushing content down*/
+    max-height:650px;/* added to stop div growing and pushing content down*/
 }
 
 /*absoloute position to push to middle*/
@@ -381,27 +403,30 @@ width:600px!important;
     
     border:solid 5px #54A6BB;
     height:300px;
-    width:500px;
+    width:590px;
+    margin-right:40px;
+    margin-left:40px;
     position: relative;
-    top:-450px;
+    top:-480px;
     z-index:9999;
 }
 
 /* corrects the alignment*/
 .about-text2{
   margin-top: 100px;
-
+  margin-top: 180px;
   font-size: 1.8em;
-    padding:50px;
+    padding-left:40px;
+    font-family: Avenir-book, Helvetica, sans-serif;
     /* margin-left: 10px!important; */
    
 }
 
 .pic-inner3{
     background-color: rgb(127, 174, 183);
-    height: 300px;
+    height: 350px;
     width:600px;
-    padding-top:40px;
+    padding-top:100px;
     padding-left:50px;
 }
 
@@ -410,6 +435,7 @@ width:600px!important;
 .about-text{
     font-size: 1.8em;
     padding:50px;
+    font-family: Avenir-book, Helvetica, sans-serif;
 
 
 
