@@ -184,17 +184,24 @@ width:600px!important;
   font-family: Avenir, Helvetica, sans-serif!important;
 
 }
+.carousel{
+  height:900px;
+  padding-bottom:250px;
+  padding-top:50px;
+}
+
+.video-adj{
+  height:600px; 
+  width:100%;
+}
+
+.slider-image{
+  height:800px!important;
+
+}
 
 
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    padding-bottom: 50px;
-    color: white;
- 
-  }
+
 /* main content block*/
 .test{
   height:400px;
@@ -204,6 +211,16 @@ width:600px!important;
   margin-top: -100px;
   
   display: none;
+  }
+/*...........footer...............*/
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 50px;
+    color: white;
+ 
   }
 .contact h5{
     font-size: 20px;
@@ -274,6 +291,10 @@ width:600px!important;
 .legals{
     font-size: 10px;
 }
+.content-link-mobile{
+  display: none;
+}
+
 /* media adjustments for large*/
 @media (min-width: 992px) { 
     .intro{
@@ -287,17 +308,75 @@ width:600px!important;
 
     .intro{
         padding-top: 250px;
+        display:block;
     }
- }
+    .carousel{
+      height:1100px;
+      padding-bottom:200px;
+      padding-top:50px;
+    }
+    
+    .video-adj{
+      height:1000px; 
+      width:100%;
+    }
+    
+    .slider-image{
+      height:1000px!important;
+    }
+    .top-left {
+      right:20px;
+    }
+    .yatchs-text{
+      margin-top:150px;
+    }
+    .asset-text{
+      margin-bottom: 150px;
+    }
+    .commercial-text{
+      margin-top: 80px;
+      margin-bottom: 50px;
+    }
 
- .content-link-mobile{
-     display: none;
- }
+
+ 
+  }
+
+
+ /*  */
 
 /* media adjustments for basic shell*/
 @media (max-width: 575.98px) { 
+  .carousel{
+    height:700px;
+   
+    padding-top:50px;
+  }
+  
+  .video-adj{
+    height:700px; 
+    width:100%;
+  }
+
+  .slider-image{
+    height:700px!important;
+  }
+
+  .top-left {
+    right:25px;
+    font-size: 1.5em;
+  }
+
+  .ham{
+    margin-top: 40px;
+  }
+.offcanvas-header{
+  height:70px;
+}
+
 
     .intro{
+    display:block;
         padding-top: 150px;
     }
 
