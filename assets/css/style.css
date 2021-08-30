@@ -332,6 +332,13 @@ width:600px!important;
     height:1800px!important;
   
   }
+  .blue-content-box{
+    right:10%!important;
+  }
+
+  .title{
+    right:10%!important;
+  }
   
 
 }
@@ -641,6 +648,7 @@ width:600px!important;
     margin-right:20px;
   
    }
+  }
 
 /*...............page template..............*/
 
@@ -653,15 +661,19 @@ width:600px!important;
     float:right;
     width:700px;
     background-color:rgba(17, 87, 104,0.8) ;
-    margin-right:20px;
+    margin-right:12px;
     position: absolute;
     top:340px;
     right:20px;
     text-align: right;
+   font-family: Avenir-book, Helvetica, sans-serif;
+   font-size: 12px;
+   text-align: right;
    
     margin-top:20px;
    padding-right: 50px;
-   padding-top:50px;
+   padding-left: 20px;
+   padding-top:40px;
 
     
 
@@ -672,10 +684,21 @@ width:600px!important;
 
 }
 
+.footer-page{
+ 
+  
+    bottom:0!important;
+    position: initial;
+    margin-bottom: 50px;
+   
+   
+
+}
+
 .title{
     position: absolute;
-    top:15vh;
-    right:4vw;
+    top:260px;
+    right:35px;
     color:rgb(220, 220, 220);
 
 }
@@ -1141,3 +1164,4 @@ h1{font-size: 4em;}
               transform: scale(1);
     }
   }
+ 
