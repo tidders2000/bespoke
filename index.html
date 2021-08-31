@@ -34,11 +34,11 @@
 <style>
 
 </style>
-<body>
-
+<body onload="myFunction()">
+    <img src="assets//images/bspoke-cursor.png" id="loader"/>
 
     <!--nav off canvas-->
-<div class="main"> 
+<div class="main" id="main" >
     
 
       <!--end of nav-->
@@ -216,10 +216,11 @@
 </div>
 
 </div><!--end of test-->
+<div class="intro " id="intro">
+    <img src="assets/images/bspokelogo.png" class="intial-logo scale-up-center" alt="bespoke logo"/>
+</div>
  </div><!--end of main-->
-    <div class="intro " id="intro">
-        <img src="assets/images/bspokelogo.png" class="intial-logo scale-up-center" alt="bespoke logo"/>
-    </div>
+
     <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
         <div class="offcanvas-header">
        
@@ -315,6 +316,18 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
     <script src="assets/js/javascript.js"></script>
+    <script>
+        var myVar;
+        
+        function myFunction() {
+          myVar = setTimeout(showPage, 4000);
+        }
+        
+        function showPage() {
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("main").style.display = "block";
+        }
+        </script>
    
 </body>
 </html>

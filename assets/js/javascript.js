@@ -4,7 +4,11 @@ function fadeMyDiv() {
     $("#intro").fadeOut(4000)
     $("#test").slideUp( 300 ).delay( 4000 ).fadeIn( 400 );
  
- }
+ };
+         function showPage() {
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("myDiv").style.display = "block";
+        }
 
  var $animation_elements = $('.animation-element');
  var $window = $(window);
@@ -34,8 +38,7 @@ function fadeMyDiv() {
  $window.trigger('scroll');
 
 $(document).ready(function() {
- fadeMyDiv();
+  setTimeout(() => {fadeMyDiv(); }, 4000);
 
 
- }
-)
+ });
