@@ -675,14 +675,18 @@ width:600px!important;
   
   .about-text{
     font-size: 30px;
+    margin-top:-30px;
   
    }
 
    .about-text2{
    
     font-size: 30px;
-   margin-top: 10px;
+   margin-top: 120px;
    margin-bottom: 30px;
+  }
+  .pic-inner3{
+    margin-top: 80px;
   }
 
   .yatchs-text{
