@@ -675,14 +675,14 @@ width:600px!important;
   
   .about-text{
     font-size: 30px;
-    margin-top:-30px;
+    margin-top:-50px;
   
    }
 
    .about-text2{
    
     font-size: 30px;
-   margin-top: 120px;
+   margin-top: 50px;
    margin-bottom: 30px;
   }
   .pic-inner3{
@@ -770,7 +770,7 @@ width:600px!important;
     margin-right:12px;
     position: absolute;
     top:340px;
-    right:20px;
+    right:-70px;
     text-align: right;
    font-family: Avenir-book, Helvetica, sans-serif;
    font-size: 12px;
@@ -803,7 +803,7 @@ width:600px!important;
 
 .title{
     position: absolute;
-    top:260px;
+    top:150px;
     right:35px;
     color:white;
     text-transform: uppercase;
