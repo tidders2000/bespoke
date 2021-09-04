@@ -23,7 +23,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
     <link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"> 
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> 
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"> 
     <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
  
  
@@ -37,7 +37,7 @@
 
 </style>
 <body onload="myFunction()">
-    <img src="assets//images/bspoke-cursor.png" id="loader"/>
+    <img src="assets//images/bspoke-black.jpg" id="loader"/>
 
     <!--nav off canvas-->
 <div class="main" id="main" >
@@ -51,19 +51,19 @@
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="8000">
             <video class="img-fluid video-adj" autoplay loop muted class="d-block w-100 ">
-                <source src="assets/images/movie.mov" type="video/mp4">
+                <source src="https://bespoke-scruffyhorse.s3.amazonaws.com/movie.mov" type="video/mp4">
               </video>
-                         <div class="top-left">A modern<br> firm with<br> traditional <br>values</div>
+                         <div class="top-left">In a busy<br> world we<br> make time <br>to manage<br>your asset<br>needs</div>
             <!-- <video playsinline="playsinline" autoplay="autoplay" muted="muted" >
                 <source src="assets/images/movie.mov" type="video/mp4">
               </video> -->
           </div>
           <div class="carousel-item" data-bs-interval="4000">
-            <img src="assets/images/colourful_main.jpg" class="d-block w-100  puff-in-hor lazy slider-image" alt="...">
+            <img src="assets/images/colourful_main.jpg" class="d-block w-100 slide-in-bottom  lazy slider-image" alt="...">
             <div class="top-left">A modern<br> firm with<br> traditional <br>values</div>
           </div>
           <div class="carousel-item" data-bs-interval="4000">
-            <img src="assets/images/parrot_main.jpg" class="d-block w-100  puff-in-hor lazy slider-image" alt="...">
+            <img src="assets/images/parrot_main.jpg" class="d-block w-100  slide-in-bottom lazy slider-image" alt="...">
             <div class="top-left">A modern<br> firm with<br> traditional <br>values</div>
           </div>
         </div>
@@ -151,7 +151,48 @@
                 <p class="animation-element"><span class="about-title">Yatchs</span><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. .</p>
             </div>
         </div>
+        <div class=" footer-page spacer col-12">
 
+            <div class="row footer-margin">
+                <div class="col-s-12  contact">
+                <h5>GET IN TOUCH</h5>
+              <p class="contact-text">+44 (0) 1624 882 330 &nbsp;&nbsp; <span class="blue">    I   </span> &nbsp;&nbsp;    <a href="#offcanvasTop" data-bs-toggle="offcanvas" role="button" aria-controls="offcanvasTop">CONTACT FORM</a>  </p>
+                </div>
+            </div>
+            
+            <div class="row footer-margin ">
+                <div class="col-sm-12 col-md-6 copyright d-sm-none d-md-block">
+                    Copyright © BSpoke 2021 &nbsp; &nbsp; 
+                    <span class="blue-text"> Site design and build by Blue Lime</span>
+                </div>
+                <div class="content-link-mobile">
+                    <a href="#offcanvasTop" data-bs-toggle="offcanvas" role="button" aria-controls="offcanvasTop">CONTACT FORM</a>
+                  </div>
+                <div class="social col-sm-12  col-md-6">
+                <div class="circle"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                <div class="circle"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                <div class="circle"> <i class="fa fa-instagram" aria-hidden="true"></i></div>
+                <div class="circle"><i class="fab fa-linkedin-in"></i></div>
+                <div class="circle"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                </div>
+            </div>
+            
+            <div class="row footer-margin">
+                <div class="legals col-sm-12 col-md-6">
+                    Licenced by the Financial Services Authority<br>
+                    Registered Address: The Courtyard, Albert Road, Ramsey, Isle of Man
+                    
+                </div>
+                <div class="privacy col-sm-12 col-md-6">
+                    <br>
+                    Privacy Policy &nbsp;   <span class="blue">  I </span>  &nbsp;   Sitemap &nbsp;  <span class="blue">    I   </span>   &nbsp;   Terms & Conditions&nbsp; 
+                </div>
+            </div>
+            
+            
+               
+            </div>
+            
     </div><!--end of about-->
 
     <!-- about mobile only-->
@@ -175,16 +216,16 @@
 
 
 </div><!--end of about mobile-->
-    <div class="footer col-12">
+    <div class="footer col-12 " id="footer">
 
-<div class="row footer-margin">
+<div class="row footer-margin myDiv">
     <div class="col-s-12  contact">
-    <h5>GET IN TOUCH</h5>
+    <h5 class="">GET IN TOUCH</h5>
   <p class="contact-text">+44 (0) 1624 882 330 &nbsp;&nbsp; <span class="blue">    I   </span> &nbsp;&nbsp;    <a href="#offcanvasTop" data-bs-toggle="offcanvas" role="button" aria-controls="offcanvasTop">CONTACT FORM</a>  </p>
     </div>
 </div>
 
-<div class="row footer-margin">
+<div class="row footer-margin myDiv">
     <div class="col-sm-12 col-md-6 copyright d-sm-none d-md-block">
         Copyright © BSpoke 2021 &nbsp; &nbsp; 
         <span class="blue-text"> Site design and build by Blue Lime</span>
@@ -201,7 +242,7 @@
     </div>
 </div>
 
-<div class="row footer-margin">
+<div class="row footer-margin myDiv">
     <div class="legals col-sm-12 col-md-6">
         Licenced by the Financial Services Authority<br>
         Registered Address: The Courtyard, Albert Road, Ramsey, Isle of Man
@@ -221,7 +262,13 @@
 <div class="intro " id="intro">
     <img src="assets/images/bspokelogo.png" class="intial-logo scale-up-center" id="intial-logo" alt="bespoke logo"/>
 </div>
+
+
+
  </div><!--end of main-->
+
+ 
+    
 
     <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
         <div class="offcanvas-header">
@@ -322,7 +369,7 @@
         var myVar;
         
         function myFunction() {
-          myVar = setTimeout(showPage, 4000);
+          myVar = setTimeout(showPage, 6000);
           
         }
         
@@ -331,6 +378,10 @@
           document.getElementById("main").style.display = "block";
         }
         </script>
+
+      
+
+        
    
 </body>
 </html>

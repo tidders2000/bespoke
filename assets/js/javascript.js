@@ -1,16 +1,26 @@
-
+// 
 
 function fadeMyDiv() {
     
-    $("#intro").fadeOut(4000)
-    $("#test").slideUp( 300 ).delay( 4000 ).fadeIn( 400 );
+    $("#intro").fadeOut(5000)
+    $("#test").slideUp( 300 ).delay( 6000 ).fadeIn( 100 );
  
  };
         //  function showPage() {
         //   document.getElementById("loader").style.display = "none";
         //   document.getElementById("main").style.display = "block";
         // }
-
+  
+        $(window).scroll(function() {
+          if ($(this).scrollTop()>100)
+           {
+              $('.myDiv').hide();
+           }
+          else
+           {
+            $('.myDiv').show();
+           }
+       });
  var $animation_elements = $('.animation-element');
  var $window = $(window);
  
