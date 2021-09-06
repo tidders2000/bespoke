@@ -681,7 +681,13 @@ width:600px!important;
 
 /*.......media adjustments about....*/
 
-@media (max-width: 1100px) {
+@media (min-width: 900px) and (max-width:1200px){
+.about-text2 p{
+  width:90%;
+}
+}
+
+@media (max-width: 900px) {
 
 
 .pic-inner{
@@ -710,7 +716,7 @@ width:600px!important;
    .about-text2 {
     font-size: 1.5vh;
 
-    margin-top: 5%!important;
+
   
    }
 
@@ -724,7 +730,7 @@ width:600px!important;
 .inner-img2{
     
     border:solid 5px #54A6BB;
-    height:35%;
+    height:40%;
     width:130%;
     margin-right:40px;
     margin-left:-100px;
@@ -738,7 +744,7 @@ width:600px!important;
 
 .pic-inner2{
   background-color: rgb(52, 133, 154);
-  height: 50vh;
+  height: 40vh;
   width:35vw;
   /* position: relative; */
   float:right;
