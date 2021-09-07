@@ -65,7 +65,7 @@
 
 /* custom cursor added to body*/
   body{
-      background-color: black;
+      background-color: black!important;
       color:white;
       cursor: url(../images/bspoke-cursor.png), auto;
       cursor: url(../images/bspoke-cursor.png) 15 15, move;
@@ -910,7 +910,7 @@ left:10%;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
+ .accordion:hover {
   background-color: #ccc;
 }
 
