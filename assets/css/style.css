@@ -73,13 +73,19 @@
   }
  /* google translate*/
 
- #google_translate_element{
+ .translate-div{
   text-align: center;
-  position: fixed;
+  
   left: 45vw;
   cursor: pointer!important;
-  top: 2%;
+  padding-top:2%;
   z-index: 99;
+}
+
+.translate-div img{
+  display: inline-block;
+    margin: auto;
+    height: 15px;
 }
 
 .translate{
@@ -606,7 +612,7 @@ width:600px!important;
 }
 
 .about-text{
-  font-size: 3vh;
+  font-size: 2vh;
 
   font-family: Avenir-book, Helvetica, sans-serif;
 }
@@ -648,7 +654,7 @@ width:600px!important;
 /* corrects the alignment*/
 .about-text2{
 
-  font-size: 3vh;
+  font-size: 2vh;
     padding-left:40px;
     font-family: Avenir-book, Helvetica, sans-serif;
     padding-top: 15%;
@@ -683,6 +689,9 @@ width:600px!important;
 /*.......media adjustments about....*/
 
 @media (min-width: 900px) and (max-width:1200px){
+  .about-text2{
+    margin-top: 2%!important;
+  }
 .about-text2 p{
   width:90%;
 }
@@ -718,13 +727,13 @@ width:600px!important;
   .about-text {
     font-size: 1.5vh;
  
-    margin-top: -5px;
+    margin-top: -20px;
 
   
    }
    .about-text2 {
     font-size: 1.5vh;
-
+    padding-top: 8%!important;
 
   
    }
