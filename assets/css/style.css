@@ -256,7 +256,7 @@ width:600px!important;
   text-align: right;
   text-transform: uppercase;
   letter-spacing: 2px;
-  
+  line-height: 1.1;
 
   font-size: 2.3em;
   font-family: Avenir, Helvetica, sans-serif!important;
@@ -598,7 +598,7 @@ width:600px!important;
     padding-top:10%;
 }
 .inner-img{
-    border:solid 5px #54A6BB;
+    border:solid 2px #54A6BB;
     height:84%;
     width:100%;
     position: relative;
@@ -635,7 +635,7 @@ width:600px!important;
 /*absoloute position to push to middle*/
 .inner-img2{
     
-    border:solid 5px #54A6BB;
+    border:solid 2px #54A6BB;
     height:45%;
     width:170%;
     margin-right:70px;
@@ -667,7 +667,7 @@ width:600px!important;
 .inner-img3{
   position: relative;
   top:17%;
-  border:solid 5px #54A6BB;
+  border:solid 2px #54A6BB;
   height:88%;
   width:100%;
   position: relative;
