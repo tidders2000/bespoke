@@ -106,9 +106,9 @@
     
    <div class="accordion">OWNERSHIP +</div>
    <div class="panel">
-     <p>When purchasing a yacht it is important to consider the use of corporate structures which can not  only assist with tax and VAT planning but also ring fence exposure and limit liability.</p>
+     <p >When purchasing a yacht it is important to consider the use of corporate structures which can not  only assist with tax and VAT planning but also ring fence exposure and limit liability.</p>
 
-      <p>A full list of corporate services can be found on our Corporate Services page which we provide alongside other yacht management services.</p>
+      <p >A full list of corporate services can be found on our Corporate Services page which we provide alongside other yacht management services.</p>
       
       <p>Fiducs can also assist in the arrangement of appropriate insurance cover and purchase finance through one of our established connections. For more information, please contact us.</p>
    </div>
@@ -325,24 +325,20 @@
 
                 <script>
                   var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-    this.classList.toggle("active");
-
-    /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
-                </script>
+                  var i;
+                  
+                  for (i = 0; i < acc.length; i++) {
+                    acc[i].addEventListener("click", function() {
+                      this.classList.toggle("active");
+                      var panel = this.nextElementSibling;
+                      if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                      } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                      } 
+                    });
+                  }
+                  </script>
                
             </body>
             </html>
