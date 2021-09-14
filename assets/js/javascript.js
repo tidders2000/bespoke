@@ -15,10 +15,12 @@ function fadeMyDiv() {
           if ($(this).scrollTop()>100)
            {
               $('.myDiv').hide();
+              $('.carousel').hide();
            }
           else
            {
             $('.myDiv').show();
+            $('.carousel').show();
            }
        });
  var $animation_elements = $('.animation-element');
