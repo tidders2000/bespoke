@@ -372,7 +372,7 @@ width:600px!important;
 }
 
 .carousel-item img{
-  object-fit: cover!important;
+  object-fit: scale-down!important;
 }
 
 .video-adj{
