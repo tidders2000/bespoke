@@ -13,7 +13,10 @@
  
 /* loader*/
 
-
+a{
+  color:white;
+  cursor: pointer;
+}
 
 /* Center the loader */
 #loader {
@@ -400,10 +403,27 @@ width:600px!important;
     color: white;
  
   }
+.contact-header{
 
+ 
+  font-size: 2.2em;
+  font-family: Avenir, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+label{
+  text-transform: uppercase;
+  font-family: Avenir-book, Helvetica, sans-serif!important;
+
+}
+
+.button.btn-close{
+  color:white;
+}
 .contact h5{
     font-size: 20px;
     font-family: Avenir, Helvetica, sans-serif;
+    text-transform: uppercase;
 }
   .contact {
     text-align: right;
@@ -411,8 +431,8 @@ width:600px!important;
 }
 
 .contact-text{
-    font-size: 12px;
-    font-family: Avenir, Helvetica, sans-serif!important;
+    font-size: 14px;
+    font-family: Avenir-book, Helvetica, sans-serif!important;
 }
 
 .contact-text span{
@@ -446,6 +466,7 @@ width:600px!important;
 
 .social{
    text-align: right;
+   cursor: pointer!important;
 }
 /* circle for social icons*/
 .circle{
@@ -581,6 +602,10 @@ width:600px!important;
 
 /* media adjustments for basic shell*/
 @media (max-width: 575.98px) { 
+
+  .social-mob {
+    margin-top: 70px;
+  }
 
   .translate{
     display: none;
@@ -932,6 +957,12 @@ left:10%;
 .mobile-about-heading{
     display:flexbox;
     text-transform: uppercase;
+  
+    letter-spacing: 2px;
+    line-height: 1.1;
+  
+    font-size: 1.5em;
+    font-family: Avenir, Helvetica, sans-serif!important;
 }
 
 
