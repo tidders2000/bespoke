@@ -3,7 +3,7 @@
 function fadeMyDiv() {
     
     $("#intro").fadeOut(5000)
-    $("#test").slideUp( 300 ).delay( 6000 ).fadeIn( 100 );
+    $("#test").slideUp( 300 ).delay( 6000 ).fadeIn( 10 );
  
  };
         //  function showPage() {
