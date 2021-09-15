@@ -681,12 +681,29 @@ label{
         text-align: center;
     }
 
+    
+
     .circle{
-        float:none;
-       display:inline-block;
+        float:right;
+        display:inline-block;
 
         margin-left: 0;
-        margin-right: 5px;;
+        margin-right: 5px;
+     }
+
+     .cm{
+       float: none!important;
+     
+     }
+
+     .social-mob{
+       padding-top: 70px;;
+     }
+
+     .social{
+      display: block;
+      margin: auto;
+      width: auto;
      }
 
      .copyright{
