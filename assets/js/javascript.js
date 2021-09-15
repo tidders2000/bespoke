@@ -20,7 +20,7 @@ function fadeMyDiv() {
           else
            {
             $('.myDiv').show();
-            $('.carousel').show(1000);
+            $('.carousel').show(600);
            }
        });
  var $animation_elements = $('.animation-element');
