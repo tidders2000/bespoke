@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="BSpoke">
+    <meta name="description" content="">
     <title>BSPOKE</title>
     <!--vendor css-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
@@ -43,6 +45,12 @@ pageLanguage: 'en'
 
 }
     </script>
+      <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+      <script type="text/javascript">
+          (function() {
+              emailjs.init("user_0lBHAUSVc18wA9j4fk6kg");
+          })();
+      </script>
 
 </head>
 <style>
@@ -337,7 +345,7 @@ pageLanguage: 'en'
         
                 <!--Grid column-->
                 <div class="col-md-12 mb-md-0 mb-5">
-                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                    <form id="contactform" onsubmit="return sendMail(this);">
         
                         <!--Grid row-->
                         <div class="row">
@@ -354,7 +362,7 @@ pageLanguage: 'en'
                             <!--Grid column-->
                             <div class="col-md-6">
                                 <div class="md-form mb-0">
-                                    <input type="text" id="email" name="email" class="form-control">
+                                    <input type="text" id="email" name="mail" class="form-control">
                                     <label for="email" class="">Your email</label>
                                 </div>
                             </div>
@@ -388,12 +396,14 @@ pageLanguage: 'en'
                             </div>
                         </div>
                         <!--Grid row-->
-        
+                       
+                        <div class="text-center text-md-left">
+                            <!-- <a class="btn  form-submit" id="submit" onclick="submit()">Send</a> -->
+                            <button type="submit" class="btn form-submit">Send</button>
+                        </div>
                     </form>
         
-                    <div class="text-center text-md-left">
-                        <a class="btn  form-submit" onclick="document.getElementById('contact-form').submit();">Send</a>
-                    </div>
+                  
                     <div class="status"></div>
                 </div>
                 <!--Grid column-->
@@ -414,6 +424,7 @@ pageLanguage: 'en'
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
     <script src="assets/js/javascript.js"></script>
+    <script  src="assets/js/mail.js"></script>
     <script>
         var myVar;
         
