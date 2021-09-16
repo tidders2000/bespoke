@@ -1,15 +1,12 @@
 
-
+//control opening animation
 function fadeMyDiv() {
     
     $("#intro").fadeOut(5000)
     $("#test").slideUp( 300 ).delay( 6000 ).fadeIn( 50 );
  
  };
-        //  function showPage() {
-        //   document.getElementById("loader").style.display = "none";
-        //   document.getElementById("main").style.display = "block";
-        // }
+     
   
         $(window).scroll(function() {
           if ($(this).scrollTop()>10)
@@ -55,3 +52,6 @@ $(document).ready(function() {
 
 
  });
+//tooltip for scroll circle
+var exampleEl = document.getElementById('example')
+var tooltip = new bootstrap.Tooltip(exampleEl)
