@@ -451,14 +451,16 @@ label{
     font-size: 14px;
     font-family: Avenir-book, Helvetica, sans-serif!important;
 }
-
+.contact-text-holder{
+text-align: right;
+}
 .contact-text span{
     color:#005E76;
     font-weight: bold;
 }
 
 .copyright{
-    font-size: 10px;
+    font-size: 12px;
 }
 .contact-text a{
     color:white;
@@ -503,10 +505,22 @@ label{
     font-size: 12px;
     text-transform: uppercase;
     font-family: Avenir, Helvetica, sans-serif!important;
+    clear:both;
+   
+    float: right;
+ 
    
 }
+
+.copyright{
+  font-size: 12px;
+}
+
+.privacy p{
+  margin-top:9%;
+}
 .legals{
-    font-size: 10px;
+    font-size: 12px;
 }
 .content-link-mobile{
   display: none;
@@ -617,7 +631,17 @@ label{
       object-fit: cover!important;
     }
     
+.privacy{
+  font-size: 9px;
+}
+.copyright{
+  font-size:9px;
+  padding-right: 0;
+}
 
+.privacy p{
+  margin-top:8%;
+}
  
   }
 
@@ -715,6 +739,10 @@ label{
 
      .contact{
          display:none;
+     }
+
+     .contact-text-holder{
+       display: none;
      }
 
      .social{

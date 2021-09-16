@@ -3,7 +3,7 @@
 function fadeMyDiv() {
     
     $("#intro").fadeOut(5000)
-    $("#test").slideUp( 300 ).delay( 6000 ).fadeIn( 10 );
+    $("#test").slideUp( 300 ).delay( 6000 ).fadeIn( 50 );
  
  };
         //  function showPage() {
@@ -12,14 +12,14 @@ function fadeMyDiv() {
         // }
   
         $(window).scroll(function() {
-          if ($(this).scrollTop()>100)
+          if ($(this).scrollTop()>10)
            {
               $('.myDiv').hide();
               $('.carousel').hide();
            }
           else
            {
-            $('.myDiv').show();
+            $('.myDiv').show(600);
             $('.carousel').show(600);
            }
        });
