@@ -544,6 +544,9 @@ text-align: right;
 
 .privacy-para{
 clear: both;
+font-size: 12px;
+    text-transform: uppercase;
+    font-family: Avenir, Helvetica, sans-serif!important;
 }
 .legals{
     font-size: 10px;
