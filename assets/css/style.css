@@ -748,7 +748,7 @@ font-size: 12px;
     
 
     .circle{
-        float:right;
+        float:none;
         display:inline-block;
 
         margin-left: 0;
@@ -773,8 +773,8 @@ font-size: 12px;
      .copyright{
          display:none;
      }
-     .privacy{
-         display:none;
+     .privacy-para{
+        font-size: 10px;
      }
 
      .contact{
