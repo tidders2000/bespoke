@@ -16,6 +16,7 @@
 a{
   color:white;
   cursor: pointer;
+  text-decoration: none;
 }
 
 /* Center the loader */
@@ -775,6 +776,10 @@ font-size: 12px;
      }
      .privacy-para{
         font-size: 10px;
+     }
+
+     .privacy-para a{
+       text-decoration: none!important;
      }
 
      .contact{
