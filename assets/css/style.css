@@ -19,6 +19,9 @@ a{
   text-decoration: none;
 }
 
+button{
+  text-transform: uppercase;
+}
 /* Center the loader */
 #loader {
   position: fixed;
@@ -194,6 +197,10 @@ a{
 
   h1{
       font-family: Avenir, Helvetica, sans-serif;
+  }
+
+  .upper{
+    text-transform: capitalize;
   }
 
   .blue-text{
@@ -1097,7 +1104,7 @@ left:10%;
 /*...............page template..............*/
 
 .page-main-image{
-    height:600px;
+    height:1000px;
 }
 
 .blue-content-box{
@@ -1105,7 +1112,7 @@ left:10%;
     float:right;
     width:700px;
     background-color:rgba(17, 87, 104,0.8) ;
-    margin-right:12px;
+  
     position: absolute;
     top:340px;
     right:-70px;
@@ -1114,7 +1121,7 @@ left:10%;
    font-size: 12px;
    text-align: right;
    
-    margin-top:20px;
+    margin-top:60px;
    padding-right: 50px;
    padding-left: 20px;
    padding-top:40px;
@@ -1201,6 +1208,7 @@ left:10%;
     bottom:0!important;
     position: initial;
     margin-bottom: 50px;
+    margin-top: 600px;
    
    
 
@@ -1212,6 +1220,7 @@ left:10%;
     right:35px;
     color:white;
     text-transform: uppercase;
+    text-align: right;
 
 }
 
@@ -1245,6 +1254,18 @@ h1{font-size: 2.2em;}
         font-size: 1em;
        
  }
+ .page-main-image {
+  height: 600px;
+}
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .page-main-image {
+      height: 800px;
+    }
 }
 /*................animations..............*/
 
