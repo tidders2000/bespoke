@@ -33,7 +33,123 @@
 
 </head>
 <style>
+body{margin-top:20px;}
 
+.team-list img {
+  width: 50%;
+}
+
+.team-list .content {
+  width: 50%;
+}
+
+.team-list .content .follow {
+  position: absolute;
+  bottom: 24px;
+}
+
+.team-list:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.team, .team-list {
+  -webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
+}
+
+.team .content .title, .team-list .content .title {
+  font-size: 18px;
+}
+
+.team .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.team .member-position, .team .team-social {
+  position: absolute;
+  bottom: -35px;
+  right: 0;
+  left: 0;
+  margin: auto 10%;
+  z-index: 99;
+}
+
+.team .team-social {
+  bottom: 40px;
+  opacity: 0;
+  -webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
+}
+
+.team:hover {
+  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+.team:hover .overlay {
+  opacity: 0.6;
+}
+
+.team:hover .team-social {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .team-list img,
+  .team-list .content {
+    width: 100%;
+    float: none !important;
+  }
+  .team-list img .follow,
+  .team-list .content .follow {
+    position: relative;
+    bottom: 0;
+  }
+}
+
+.social-icon.social li a {
+    color: #adb5bd;
+    border-color: #adb5bd;
+}
+.social-icon li a {
+    color: #35404e;
+    border: 1px solid #35404e;
+    display: inline-block;
+    height: 32px;
+    text-align: center;
+    font-size: 15px;
+    width: 32px;
+    line-height: 30px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    overflow: hidden;
+    position: relative;
+}
+.rounded {
+    border-radius: 5px !important;
+}
+
+.para-desc {
+    max-width: 600px;
+}
+.text-muted {
+    color: #8492a6 !important;
+}
+
+.section-title .title {
+    letter-spacing: 0.5px;
+    font-size: 30px;
+}
 </style>
 <body>
 
@@ -47,95 +163,120 @@
 
 <div class="test1" id="test1">
   <img src="assets/images/mainimage_yachts.jpg"  class="d-block w-100 page-main-image" alt="...">
-<div class="title"><h1>Yachts </h1></div>
+<div class="title"><h1>Meet the Team </h1></div>
   <div class="blue-content-box slide-tl">
-    <p>Yachts are assets which can represent a significant investment. The careful structuring for these assets and their management, therefore, is essential.</p>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.css" integrity="sha256-NAxhqDvtY0l4xn+YVa6WjAcmd94NNfttjNsDmNatFVc=" crossorigin="anonymous" />
 
-    <p>The services which Fiducs provide in relation to yacht management are listed below, however, where other more specialist skills not listed are required, we work together with trusted specialists to provide complete one point of contact packages.</p>
+<div class="container bootdey">
+  <div class="row">
+    <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
+        <div class="team text-center rounded p-3 py-4">
+            <img src="https://bootdey.com/img/Content/avatar/avatar7.png" class="img-fluid avatar avatar-medium shadow rounded-pill" alt="">
+            <div class="content mt-3">
+                <h4 class="title mb-0">Lisa Martin</h4>
+                <small class="text-muted">Founder</small>
+                <ul class="list-unstyled mt-3 social-icon social mb-0">
+                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-facebook" title="Facebook"></i></a></li>
+                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-instagram" title="Instagram"></i></a></li>
+                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-twitter" title="Twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-google-plus" title="Google +"></i></a></li>
+                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-linkedin" title="Linkedin"></i></a></li>
+                </ul><!--end icon-->
+            </div>
+        </div>
+    </div><!--end col-->
     
-   <h5>Acquisition Services</h5> 
-    <ul>
-      <li> Yacht Purchase Finance</li>
-      <li>  Financial Structuring</li>
-      <li>   Ownership</li>
-
-
-    </ul>
-   
-  
-    <h5>Ownership</h5>
-    <ul>
-      <li>    Jurisdiction and Structure</li>
-      <li> Tax and VAT planning</li>
-      <li>Corporate Services</li>
-    </ul>
+    <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
+        <div class="team text-center rounded p-3 py-4">
+            <img src="https://bootdey.com/img/Content/avatar/avatar8.png" class="img-fluid avatar avatar-medium shadow rounded-pill" alt="">
+            <div class="content mt-3">
+                <h4 class="title mb-0">Calvin Carlo</h4>
+                <small class="text-muted">C.E.O.</small>
+                <ul class="list-unstyled mt-3 social-icon social mb-0">
+                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-facebook" title="Facebook"></i></a></li>
+                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-instagram" title="Instagram"></i></a></li>
+                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-twitter" title="Twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-google-plus" title="Google +"></i></a></li>
+                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-linkedin" title="Linkedin"></i></a></li>
+                </ul><!--end icon-->
+            </div>
+        </div>
+    </div><!--end col-->
     
-
-   
+    <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
+        <div class="team text-center rounded p-3 py-4">
+            <img src="https://bootdey.com/img/Content/avatar/avatar2.png" class="img-fluid avatar avatar-medium shadow rounded-pill" alt="">
+            <div class="content mt-3">
+                <h4 class="title mb-0">Richha Jotchi</h4>
+                <small class="text-muted">Manager</small>
+                <ul class="list-unstyled mt-3 social-icon social mb-0">
+                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-facebook" title="Facebook"></i></a></li>
+                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-instagram" title="Instagram"></i></a></li>
+                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-twitter" title="Twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-google-plus" title="Google +"></i></a></li>
+                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-linkedin" title="Linkedin"></i></a></li>
+                </ul><!--end icon-->
+            </div>
+        </div>
+    </div><!--end col-->
     
-
-<h5>  Yacht  Formalities</h5>
-  
-    <ul>
-      <li> Registration</li>
-      <li>    Owner Representative</li>
-      <li>  Other Representative required positions</li>
-      <li>   Insurance</li>
-   
-    </ul>
-    <h5>Yacht Operational Management Services</h5>
-    <ul>
-      <li>    Crewing Recruitment, Employment and Payroll</li>
-      <li> MLC compliance</li>
-      <li> ISM and ISPS</li>
-      <li>Technical Support</li>
-      <li> Financial control and services</li>
-      <li> Operations and logistics</li>
-    </ul>
-   
-   <h5>Procuration</h5>
-   <ul>
-     <li>Travel arrangements</li>
-     <li>Parts and accessories</li>
-     <li>  Internal accessories</li>
-     <li> “Boys Toys”</li>
-     <li> Luxury Concierge and Personal Shopping</li>
-   </ul>
+    <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
+        <div class="team text-center rounded p-3 py-4">
+            <img src="https://bootdey.com/img/Content/avatar/avatar6.png" class="img-fluid avatar avatar-medium shadow rounded-pill" alt="">
+            <div class="content mt-3">
+                <h4 class="title mb-0">Cristino Murfy</h4>
+                <small class="text-muted">Accountant</small>
+                <ul class="list-unstyled mt-3 social-icon social mb-0">
+                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-facebook" title="Facebook"></i></a></li>
+                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-instagram" title="Instagram"></i></a></li>
+                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-twitter" title="Twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-google-plus" title="Google +"></i></a></li>
+                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-linkedin" title="Linkedin"></i></a></li>
+                </ul><!--end icon-->
+            </div>
+        </div>
+    </div><!--end col-->
+</div><!--end row-->
+    </div>
+    <!-- JOHN BELL BSc (Hons) Computer Science, FCA
+    John founded what has become BSpoke360 in 1994 to complement his cross-border tax services. His career bias has been towards broad-based commercial consultancy including opportunity appraisal and planning, project management, corporate transactions and investment assessment and services. His approach has been driven by working closely with clients to best assess, interpret and address their specific requirements, a culture which continues to underpin BSpoke360 to day.
+    Interests outside work include sailing, skiing, and as a writer of novels.
     
     
+    KIMBERLEY BELL
+    XXXXXXXXX
     
-   <div class="accordion">OWNERSHIP +</div>
-   <div class="panel">
-     <p >When purchasing a yacht it is important to consider the use of corporate structures which can not  only assist with tax and VAT planning but also ring fence exposure and limit liability.</p>
-
-      <p >A full list of corporate services can be found on our Corporate Services page which we provide alongside other yacht management services.</p>
-      
-      <p>Fiducs can also assist in the arrangement of appropriate insurance cover and purchase finance through one of our established connections. For more information, please contact us.</p>
-   </div>
-   
-   <div class="accordion">Safety + </div>
-   <div class="panel">
-     <p>We provide ISM & ISPS services as a bespoke standalone service or as part of our full management package as well as flag state approved systems for vessels from PYC (Passenger Yacht Code) Vessels to yachts under 24 meters and 24/7 crisis support and full document control.</p>
-   </div>
-   
-   <div class="accordion">CREW EMPLOYMENT & PAYROLL +</div>
-   <div class="panel">
-     <p>Fiducs offers crew employment and payroll including flag state approved MLC seafarers agreements (SEA), maintaining crew records, monitoring crew certificates ensuring compliance with regulations and crew recruitment including vetting, back ground checks, referencing, security checks and drug testing.</p>
-     <p>Our concierge arm can also organise flight and travel arrangements for crew members.
-
-    </p>
-   </div>
-   
     
-   <div class="accordion">OPERATIONS & LOGISTICS +</div>
-   <div class="panel">
-     <p>Fiducs Yacht Management will make arrangements to facilitate and safeguard the world-wide operation of the yacht such as assisting in berthing arrangements, bunkering and ship agents where required.</p>
-   </div>
-
-   <div class="accordion">PROCURATION +</div>
-   <div class="panel">
-     <p>Our Concierge services can assist in a wide range of procuration services for yachts from travel arrangements to luxury personal shopping to parts and living incidentals to “boys toys”.</p>
-   </div>
+    CHRIS STEWART
+    Chris joined the BSpoke360 family in June 2021.
+     
+    With a background in the Corporate Services world, starting in 1995, he has a wide understanding of the regulatory and corporate governance obligations of this sector.
+     
+    Finding a niche in the yachting world, her has gained vast experience in in this specific area dealing with such matters as registration, VAT compliance, ISM/ISPS and technical management.
+     
+    Married, with two extremely active boys, Chris finds his free time mostly providing “dad taxi” services; spending most weekends on the side-lines of hockey and football pitches around the Island.
+     
+    When spare time does allow, Chris is a keen, if distinctly average golfer and a passionate Everton supporter.
+    
+    
+    ANNA TEARE
+    With over 20 years compliance experience within the IOM Financial Services industry, Anna has been a member of the BSpoke360 team since March 2017 and was appointed to the Board in April 2018.
+     
+    A mum of 4 boys, evenings and weekends are often spent at the side of a football or rugby pitch or down at the athletics track. Anna is also a qualified coach with UK Athletics.
+     
+    
+    GRAHAM MOORE
+    Graham Is a Chartered Accountant with many years post qualification experience across a wide cross section of companies and sectors including as Principal of his own Chartered Accountancy practice.  He joined  BSpoke360 in May 2021 as a Director of the licensed entity.
+     
+    Married with one son, a granddaughter and twin grandsons, when not on Grandfather duty Graham is a motorsports enthusiast and participates in karting as chief mechanic for his son.
+    
+     
+    LIZ XXXX
+     
+    Liz is a qualified bookkeeper with a background in Hospitality & Bookkeeping and has been with the company since mid 2021.
+     
+    Out of office hours Liz is very much family based, enjoying all the sports and activities that brings.
+     -->
     
     
 
