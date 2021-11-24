@@ -1102,7 +1102,9 @@ left:10%;
 
 
 /*...............page template..............*/
-
+.title h1{
+  letter-spacing: 2px;
+}
 .page-main-image{
     height:1000px;
 }
