@@ -50,7 +50,9 @@ button{
   animation: spinner 2s linear infinite;
 }
 
-
+h5{
+  padding-top: 15px;
+}
 
 /* Transparent Overlay */
 
